@@ -7,8 +7,10 @@ $(document).ready(function() {
     return inputSentence.charAt(0).toUpperCase() + inputSentence.slice(-1).toUpperCase();
   };
 
-
-  console.log(newString(inputSentence));
+  var reverseString = function(newString) {
+    return newString.split("").reverse().join("");
+  }
+  console.log(reverseString(newString(inputSentence)));
 
 
 
