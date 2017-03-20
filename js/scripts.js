@@ -9,8 +9,19 @@ $(document).ready(function() {
 
   var reverseString = function(newString) {
     return newString.split("").reverse().join("");
-  }
-  console.log(reverseString(newString(inputSentence)));
+  };
+
+  var concatString = function(inputSentence, reverseString) {
+    return inputSentence + reverseString(newString(inputSentence));
+  };
+
+  console.log(concatString(inputSentence, reverseString));
+
+  // var concatString = function(inputSentence, reverseString, newString) {
+  //   return inputSentence + reverseString(newString(inputSentence));
+  // };
+  //
+  // console.log(concatString(inputSentence, reverseString(newString())));
 
 
 
